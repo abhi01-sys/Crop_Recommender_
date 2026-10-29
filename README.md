@@ -48,8 +48,8 @@ Python, Pandas, NumPy, Matplotlib, Seaborn, scikit-learn, Optuna, Streamlit, job
 ## Run Locally
 
 ```bash
-git clone https://github.com/abhi01-sys/<Crop_Recommender_>.git
-cd <Crop_Recommender_>
+git clone https://github.com/abhi01-sys/Crop_Recommender_.git
+cd Crop_Recommender_
 pip install -r requirements.txt
 streamlit run app.py
 ```
