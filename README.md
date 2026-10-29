@@ -42,7 +42,7 @@ Python, Pandas, NumPy, Matplotlib, Seaborn, scikit-learn, Optuna, Streamlit, job
 ├── scaler.pkl            # Fitted StandardScaler
 ├── label_encoder.pkl     # Fitted LabelEncoder
 ├── requirements.txt      # Dependencies
-└── CRP_PRO.ipynb        # Training notebook 
+└── crp_pro (1).py        # Training notebook 
 ```
 
 ## Run Locally
