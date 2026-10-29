@@ -1,6 +1,6 @@
 # 🌾 Crop Recommendation System
 
-A machine learning web app that recommends the most suitable crop to grow based on soil nutrients and weather conditions.
+A machine learning web app that recommends the most suitable crop to grow based on soil nutrients and weather conditions, historical data.
 
 🔗 **Live App:** https://croprecommender-t5zntxdcyevvbwveakvpkb.streamlit.app/
 
