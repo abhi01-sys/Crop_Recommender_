@@ -11,28 +11,36 @@ st.title("🌾Crop Recommendation System")
 
 st.subheader("📜 System Recommend Based on Historical Data")
 
-@st.cache_data
-def get_data():
-    df = pd.read_csv('data.csv')
-    return df
+col1, col2, col3 = st.columns(3)
 
-@st.cache_data
-def convert_for_download(df):
-    return df.to_csv(index=False).encode("utf-8")
+with col1:
+    @st.cache_data
+    def get_data():
+        df = pd.read_csv('data.csv')
+        return df
+    
+    @st.cache_data
+    def convert_for_download(df):
+        return df.to_csv(index=False).encode("utf-8")
+    
+    df = get_data()
+    csv = convert_for_download(df)
+    
+    st.download_button(
+        label="Download CSV",
+        data=csv,
+        file_name="data.csv",
+        mime="text/csv",
+        icon=":material/download:",
+    )
 
-df = get_data()
-csv = convert_for_download(df)
+with col2:
+    st.link_button("GIT-HUB", "https://github.com/abhi01-sys")
+
+with col3:
+    st.link_button("LINKED-IN", "https://www.linkedin.com/in/abhishek-nagar-a58387226/")
 
 
-st.download_button(
-    label="Download CSV",
-    data=csv,
-    file_name="data.csv",
-    mime="text/csv",
-    icon=":material/download:",
-)
-
-st.link_button("GIT-HUB", "https://github.com/abhi01-sys")
 
 with st.form("my_form"):
 
