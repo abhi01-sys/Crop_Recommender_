@@ -32,6 +32,7 @@ st.download_button(
     icon=":material/download:",
 )
 
+st.link_button("GIT-HUB", "https://github.com/abhi01-sys")
 
 with st.form("my_form"):
 
